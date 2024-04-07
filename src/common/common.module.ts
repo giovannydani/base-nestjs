@@ -21,5 +21,6 @@ import { ErrorFilter } from './error.filter';
     ValidationService,
     { provide: APP_FILTER, useClass: ErrorFilter },
   ],
+  exports: [ValidationService],
 })
 export class CommonModule {}
